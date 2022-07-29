@@ -1,7 +1,5 @@
-import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import {ILFotoDoctor1} from '../../assets';
-import {Gap} from '../../component';
+import {Image, StyleSheet, Text, View} from 'react-native';
 import {colors, fonts} from '../../utils';
 
 const PilihDoctor = ({nama, gender, foto}) => {
