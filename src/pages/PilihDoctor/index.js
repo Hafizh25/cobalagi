@@ -10,6 +10,7 @@ const PilihDoctor = ({nama, gender, foto}) => {
         <View style={styles.content}>
           <Text style={styles.nama}>{nama}</Text>
           <Text style={styles.gender}>{gender}</Text>
+          <Text style={styles.gender}>{gender}</Text>
         </View>
       </View>
     </View>
