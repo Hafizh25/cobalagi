@@ -5,7 +5,7 @@ import {colors} from '../../utils';
 import PilihDoctor from '../PilihDoctor';
 import {ILFotoDoctor1, ILFotoDoctor2} from '../../assets';
 
-const ListDoctor = () => {
+const ListDoctor = ({navigation}) => {
   return (
     <View style={styles.page}>
       <Header type={'list_doctor'} />
@@ -13,6 +13,7 @@ const ListDoctor = () => {
         nama={'Alexander Jannie'}
         gender={'Wanita'}
         foto={ILFotoDoctor1}
+        onPress={() => navigation.navigate('UploadFoto')}
       />
       <PilihDoctor
         nama={'John McParker Steve'}

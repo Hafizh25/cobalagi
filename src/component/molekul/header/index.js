@@ -1,7 +1,8 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import Button from '../button';
 import {colors, fonts} from '../../../utils';
+import {ILFotoDoctor1} from '../../../assets';
 
 const Header = ({type}) => {
   if (type === 'list_doctor') {
@@ -20,7 +21,9 @@ const Header = ({type}) => {
         <Button type={'back_only_white'} />
         <View style={styles.isi}>
           <Text style={styles.title(type)}>Pilih Dokter Anak</Text>
+          <Text style={styles.job}>Dokter Anak</Text>
         </View>
+        <Image source={ILFotoDoctor1} style={{width: 46, height: 46}} />
       </View>
     );
   }
@@ -60,5 +63,10 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 20,
     flexDirection: 'row',
     alignItems: 'center',
+  },
+  job: {
+    fontSize: 14,
+    fontFamily: fonts.primary[400],
+    color: colors.grey5,
   },
 });

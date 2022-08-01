@@ -1,19 +1,22 @@
 import React from 'react';
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {ILrowPush} from '../../assets';
 import {colors, fonts} from '../../utils';
 
-const PilihDoctor = ({nama, gender, foto}) => {
+const PilihDoctor = ({nama, gender, foto, onPress}) => {
   return (
-    <View style={styles.page}>
+    <TouchableOpacity style={styles.page} onPress={onPress}>
       <View style={styles.container}>
         <Image source={foto} style={{width: 46, height: 46}} />
         <View style={styles.content}>
           <Text style={styles.nama}>{nama}</Text>
           <Text style={styles.gender}>{gender}</Text>
-          <Text style={styles.gender}>{gender}</Text>
         </View>
       </View>
-    </View>
+      <View>
+        <Image source={ILrowPush} style={{width: 24, height: 24}} />
+      </View>
+    </TouchableOpacity>
   );
 };
 
@@ -25,10 +28,13 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
   },
   page: {
+    marginTop: 12,
     height: 62,
     borderBottomWidth: 0.5,
-    backgroundColor: colors.grey,
-    marginVertical: 16,
+    borderBottomColor: colors.grey,
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   content: {
     marginLeft: 12,

@@ -9,6 +9,7 @@ import Hospital from './Hospitals';
 import Home from './Home';
 import ListDoctor from './ListDoctor';
 import PilihDoctor from './PilihDoctor';
+import Chart from './Chart';
 export {
   SplashScreen,
   GetStarted,
@@ -21,4 +22,5 @@ export {
   Home,
   ListDoctor,
   PilihDoctor,
+  Chart,
 };

@@ -8,6 +8,7 @@ const MainColor = {
   grey2: '#7D8797',
   grey3: '#B1B7C2',
   grey4: '#495A75',
+  grey5: '#8092AF',
 };
 
 export const colors = {
@@ -20,4 +21,5 @@ export const colors = {
   grey2: MainColor.grey2,
   grey3: MainColor.grey3,
   grey4: MainColor.grey4,
+  grey5: MainColor.grey5,
 };

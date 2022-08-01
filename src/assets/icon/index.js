@@ -17,6 +17,7 @@ import ILStart from './star_rate_18px.png';
 import ILActiveDoctor from './Ellipse1.png';
 import ILNewsPhoto from './pic.png';
 import ILButtomWhite from './arrow_back_white.png';
+import ILrowPush from './rowpush.png';
 export {
   IlLogo,
   IlBackgroundGetStarted,
@@ -37,4 +38,5 @@ export {
   ILActiveDoctor,
   ILNewsPhoto,
   ILButtomWhite,
+  ILrowPush,
 };
